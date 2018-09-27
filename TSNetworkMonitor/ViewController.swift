@@ -26,7 +26,13 @@ class ViewController: UIViewController {
         clickBtn.frame = CGRect(x: 130, y: 200, width: 50, height: 50)
         clickBtn.backgroundColor = .cyan
         clickBtn.addTarget(self, action: #selector(onClick), for: .touchUpInside)
-        TSNetworkMonitor.shared.addNetworkNotification(self, #selector(netChange))
+        TSNetworkMonitor.shared.addNetworkNotificationBlock { (not) in
+            if TSNetworkMonitor.shared.reachabilityStatus == TSListenerStatus.tsNoNet {
+                self.contentView.backgroundColor = .red
+            } else {
+                self.contentView.backgroundColor = .green
+            }
+        }
     }
 
     @objc func netChange() {

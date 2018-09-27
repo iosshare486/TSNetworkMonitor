@@ -47,6 +47,11 @@ public class TSNetworkMonitor  {
         NotificationCenter.default.addObserver(target, selector: selector, name: .reachabilityChanged, object: nil)
     }
     
+    //监听网络变化Block 方式
+    public func addNetworkNotificationBlock (_ block : @escaping ((Notification)->Swift.Void)) {
+        NotificationCenter.default.addObserver(forName: .reachabilityChanged, object: nil, queue: nil, using: block)
+    }
+    
     //注册网络监听
     public class func registerMonitor () {
         do {
