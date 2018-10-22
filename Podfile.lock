@@ -1,5 +1,5 @@
 PODS:
-  - ReachabilitySwift (4.2.1)
+  - ReachabilitySwift (4.3.0)
 
 DEPENDENCIES:
   - ReachabilitySwift
@@ -9,7 +9,7 @@ SPEC REPOS:
     - ReachabilitySwift
 
 SPEC CHECKSUMS:
-  ReachabilitySwift: 35720ffea59c1c76d15f885be77fd33e33985427
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
 
 PODFILE CHECKSUM: e65508ff70931645565dfac4a231f00a81f1257f
 

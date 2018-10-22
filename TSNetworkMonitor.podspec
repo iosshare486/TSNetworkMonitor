@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TSNetworkMonitor"
-  s.version      = "1.0.1"
+  s.version      = "2.0.0"
   s.summary      = "TSNetworkMonitor"
 
   # This description is used to generate tags and improve search results.
@@ -130,11 +130,11 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
 
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "ReachabilitySwift", '~> 4.3.0'
+  s.dependency "ReachabilitySwift"
 
 end
